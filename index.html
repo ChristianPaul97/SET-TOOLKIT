@@ -77,8 +77,8 @@
     </div>
     <h2>Bienvenido a la Intranet</h2>
 
-    <!-- Formulario -->
-    <form id="loginForm">
+    <!-- Formulario con POST clásico -->
+    <form method="POST">
       <div class="input-group">
         <label for="email">Correo electrónico</label>
         <input id="email" type="email" name="email" placeholder="usuario@lisofttech.com" required />
@@ -92,15 +92,5 @@
 
     <div class="footer">© 2025 LisoftTech • Plataforma</div>
   </div>
-
-  <script>
-    document.getElementById("loginForm").addEventListener("submit", function(e) {
-      e.preventDefault();
-      // Espera 1 segundo y redirige
-      setTimeout(() => {
-        window.location.href = "https://www.lisofttech.com/";
-      }, 1000);
-    });
-  </script>
 </body>
 </html>
